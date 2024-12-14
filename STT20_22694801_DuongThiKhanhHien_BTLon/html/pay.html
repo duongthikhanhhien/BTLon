@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <link rel="stylesheet" href="../css/pay.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/home.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-table th {
+            background-color: #f1f1f1;
+        }
+        .cart-table img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .total-price {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .checkout-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .checkout-button:hover {
+            background-color: #218838;
+        }
+        .continue-shopping {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .continue-shopping:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../image/logo.jpg" alt="">
+        </div>
+        <div class="menu">
+            <li><a href="../html/index.html">home</a></li>
+        </div>
+        <div class="icon">
+                <div class="signOut">
+                    <a href="../html/index.html">
+                        Back to shop
+                    </a>
+                </div>
+        </div>
+    </div>
+    <header>
+        <h1>Shopping Cart</h1>
+        <p>GIO HANG CUA BAN</p>
+    </header>
+
+    <!-- Cart Content -->
+    <div class="container">
+        <h3>DANH SACH SAN PHAM DA CHON</h3>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Product Row 1 -->
+                <tr>
+                    <td>
+                        <img src="../image/sp1.jpg" alt="iPhone 13">
+                        <span>iPhone 13</span>
+                    </td>
+                    <td>$799</td>
+                    <td>1</td>
+                    <td>$799</td>
+                    <td><button>Remove</button></td>
+                </tr>
+
+                <!-- Example Product Row 2 -->
+                <tr class="cart-item" data-id="item2">
+                    <td>
+                        <img src="../image/sp2.jpg" alt="iPhone 14">
+                        <span>iPhone 14</span>
+                    </td>
+                    <td>$999</td>
+                    <td>1</td>
+                    <td>$999</td>
+                    <td><button class="remove-button" onclick="removeItem('item2')">Remove</button></td>
+                </tr>
+
+                <!-- Add more products here as needed -->
+            </tbody>
+        </table>
+
+        <div class="total-price">
+            Total: $1798
+        </div>
+
+        <a href="../html/productList.html" class="continue-shopping">Continue Shopping</a>
+        <br>
+        <a href="../html/checkout.html" class="checkout-button">Proceed to Checkout</a>
+    </div>
+
+   
+</body>
+
+<script src="../jquery/jquery-3.6.4.js"></script>
+<script src="../jquery/pay.js"></script>
+</html>

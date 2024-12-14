@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/allCss.css"/>
+    <style>
+
+        /* CSS cho chú thích sản phẩm */
+        .description {
+            font-size: 14px; 
+            color: #666; 
+            margin-top: 5px; 
+        }
+        /* CSS cho phần giới thiệu */
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+        }
+        /* CSS cho form tìm kiếm */
+        .search-form {
+            display: flex;
+            align-items:end;
+        }
+        .search-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        .search-button {
+            padding: 8px 12px;
+            background-color: #5bc0de;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #31b0d5;
+        }
+        .buy-button {
+                        background-color: #28a745;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        text-decoration: none;
+                    }
+                    .buy-button:hover {
+                        background-color: #218838;
+                    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../image/logo.jpg" alt="" >
+        </div>
+        <div class="menu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="../html/productList.html">Product</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/checkout.html">Cart</a></li>
+        </div>
+        <div class="search-form">
+            <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+            <button class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="icon">
+            <div class="signOut">
+                <a href="../html/login.html">
+                    <button class="logout-button">LOGOUT</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="banner" id="top">
+        <p></p>
+    </div>
+
+    <!-- Phần giới thiệu website -->
+    <div class="intro">
+        <p>Website mua bán điện thoại uy tín, giá rẻ, chất lượng.</p>
+    </div>
+
+    <div class="sp" id="sp">
+        <div class="sp_t">
+            <h2>Danh Sách Sản Phẩm</h2>
+        </div>
+        <div class="sp_bt">
+            <ul>
+                <li>
+                    <img src="../image/sp1.jpg" alt="realmec 5" width="200px">
+                    <p>realmec 5</p>
+                    <span>Giá: 5.345.000đ</span>
+                    <p class="description"> Điện thoại thông minh với camera 64MP và pin 5000mAh.</p>
+                    <a href="../html/pay.html" class="buy-button">Buy Now</a>
+                </li>
+                <li>
+                    <img src="../image/sp2.jpg" alt="iPhone 15 promax" width="200px">
+                    <p>iPhone 15 promax</p>
+                    <span>Giá: 28.000.000đ</span>
+                    <p class="description"> Sản phẩm mới nhất của Apple với hiệu suất vượt trội.</p>
+                    <a href="../html/pay.html" class="buy-button">Buy Now</a>
+                </li>
+                <li>
+                    <img src="../image/sp3.jpg" alt="iPhone 14" width="200px">
+                    <p>iPhone 14</p>
+                    <span>Giá: 18.000.000đ</span>
+                    <p class="description"> Thiết kế hiện đại, camera sắc nét.</p>
+                    <a href="../html/pay.html" class="buy-button">Buy Now</a>
+                </li>
+                <li>
+                    <img src="../image/sp4.jpg" alt="iPhone 11" width="200px">
+                    <p>iPhone 11</p>
+                    <span>Giá: 11.000.000đ</span>
+                    <p class="description"> Một lựa chọn tuyệt vời với giá cả hợp lý.</p>
+                    <a href="../html/pay.html" class="buy-button">Buy Now</a>
+                </li>
+            </ul>
+        </div>
+        <button><a href="./html/productList.html">Show more</a></button>
+    </div>
+   
+    <div class="footer">
+        <div class="logo_end"><img src="../image/logo.jpg" alt="" ></div>
+        <div class="subscribe_title">
+
+        </div>     
+       <div class="subscribe">
+           <div class="search">
+            <input type="text" placeholder="Input yor email">  
+            <i class="fa-regular fa-envelope"></i>
+           </div>
+            <input type="submit" value="Subscribe">
+       </div>
+       <div class="list">
+        <div class="list_link">
+            <p><b>Product</b></p>
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+            </ul>
+        </div>
+        <div class="list_link">
+            <p><b>Resources</b></p>
+            <ul>
+                <li>Blog</li>
+                <li>User guildes</li>
+                <li>Webinars</li>
+            </ul>
+        </div>
+        <div class="list_link">
+            <p><b>Company</b></p>
+            <ul>
+                <li>About us </li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="list_link">
+            <p><b>Plans & Pricing</b></p>
+            <ul>
+                <li>Personal</li>
+                <li>Start up</li>
+                <li>Organization</li>
+            </ul>
+        </div>
+       </div>
+       <div class="end">
+        <select name="" id="" value="1">
+            <option value="1">English</option>
+            <option value="2">Vietnamese</option>
+        </select>
+        <div class="end_center">
+            <p>@ 2022 Brand,Inc. • Privacy • Terms • Sitemap</p>
+        </div>
+        <div class="icon_link">
+                <a href="#" style="color: rgb(85, 192, 245)"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#"style="color: blue"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#" style="color: rgb(83, 83, 185)">  <i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"style="color: red"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
